@@ -1,3 +1,6 @@
+Test 
+this repo is build upon faiseq to adress challenges to unsupervised ASR.
+ 
 <p align="center">
   <img src="docs/fairseq_logo.png" width="150">
   <br />
