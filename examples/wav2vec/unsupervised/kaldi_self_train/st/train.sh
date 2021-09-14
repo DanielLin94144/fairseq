@@ -2,13 +2,13 @@
 
 set -eu
 
-w2v_dir=  # contains features `{train,valid}.{npy,lengths}`, real transcripts `{train,valid}.${label}`, and dict `dict.${label}.txt`
-lab_dir=  # contains pseudo labels `{train,valid}.txt`
-out_dir=  # output root
-arpa_lm=  # phone LM
-arpa_lm_bin=  # (binary) phone LM for KenLM, used in unsupervised selection
+w2v_dir=/work/daniel094144/daniel/w2vu/audio  # contains features `{train,valid}.{npy,lengths}`, real transcripts `{train,valid}.${label}`, and dict `dict.${label}.txt`
+lab_dir=/work/daniel094144/daniel/w2vu/label  # contains pseudo labels `{train,valid}.txt`
+out_dir=/work/daniel094144/daniel/w2vu/output  # output root
+arpa_lm=/work/daniel094144/daniel/w2vu/LM/G2P/kenlm.wrd.o40003.arpa  # phone LM
+arpa_lm_bin=/work/daniel094144/daniel/w2vu/LM/G2P/kenlm.wrd.o40003.bin  # (binary) phone LM for KenLM, used in unsupervised selection
 
-label=phnc
+label=phn
 train_name="train"
 valid_name="valid"
 data_dir=${out_dir}/data
